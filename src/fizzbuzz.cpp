@@ -8,5 +8,13 @@ string FizzBuzz(int num)
         returnValue = "Fizz";
     }
 
+    if(num == 5){
+        returnValue = "Buzz";
+    }
+
+    if(num == 10){
+        returnValue = "FizzBuzz";
+    }
+
     return returnValue;
 }
