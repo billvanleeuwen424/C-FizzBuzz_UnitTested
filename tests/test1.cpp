@@ -14,3 +14,7 @@ TEST(FizzBuzzFunction, returnsProperNumber){
 }
 
 //function should return a "fizz" when passed a 3
+TEST(FizzBuzzFunction, returnsFizz){
+  string testString = FizzBuzz(3);
+  EXPECT_EQ(testString, "Fizz");
+}
