@@ -2,12 +2,13 @@
 #include <string>
 using std::string;
 
+#include "fizzbuzz.h"
 
 int main()
 {
-    int variable = 8;
-
-    std::cout << "Hello, World!\n";
-
-    return 0;
+    string beep;
+    for(int i = 0; i < 100; i++){
+        beep = FizzBuzz(i);
+        std::cout << beep << '\n';
+    }
 }

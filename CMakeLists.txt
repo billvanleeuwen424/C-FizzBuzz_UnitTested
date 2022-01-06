@@ -41,6 +41,11 @@ target_link_libraries(
   fizzbuzzFunction
 )
 
+#link the libraries to the file
+target_link_libraries(
+  fizzbuzz
+  fizzbuzzFunction
+)
 
 
 

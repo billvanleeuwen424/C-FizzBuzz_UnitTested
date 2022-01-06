@@ -27,6 +27,42 @@ TEST(FizzBuzzFunction, returnsBuzz){
 
 //function should return a "fizzbuzz" when passed a 5
 TEST(FizzBuzzFunction, returnsFizzBuzz){
-  string testString = FizzBuzz(10);
+  string testString = FizzBuzz(15);
+  EXPECT_EQ(testString, "FizzBuzz");
+}
+
+//function should return a "fizz" when passed many multiples of 3
+TEST(FizzBuzzFunction, returnsFizzMultiples){
+  string testString = FizzBuzz(6);
+  EXPECT_EQ(testString, "Fizz");
+
+  testString = FizzBuzz(9);
+  EXPECT_EQ(testString, "Fizz");
+
+  testString = FizzBuzz(12);
+  EXPECT_EQ(testString, "Fizz");
+}
+
+//function should return a "buzz" when passed many multiples of 5
+TEST(FizzBuzzFunction, returnsBuzzMultiples){
+  string testString = FizzBuzz(5);
+  EXPECT_EQ(testString, "Buzz");
+
+  testString = FizzBuzz(10);
+  EXPECT_EQ(testString, "Buzz");
+
+  testString = FizzBuzz(20);
+  EXPECT_EQ(testString, "Buzz");
+}
+
+//function should return a "fizzbuzz" when passed many multiples of 3&5
+TEST(FizzBuzzFunction, returnsFizzBuzzMultiples){
+  string testString = FizzBuzz(30);
+  EXPECT_EQ(testString, "FizzBuzz");
+
+  testString = FizzBuzz(45);
+  EXPECT_EQ(testString, "FizzBuzz");
+
+  testString = FizzBuzz(60);
   EXPECT_EQ(testString, "FizzBuzz");
 }
