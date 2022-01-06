@@ -1,9 +1,16 @@
 #include <gtest/gtest.h>
+#include <fizzbuzz.h>
 
-// Demonstrate some basic assertions.
-TEST(HelloTest, BasicAssertions) {
-  // Expect two strings not to be equal.
-  EXPECT_STRNE("hello", "world");
-  // Expect equality.
-  EXPECT_EQ(7 * 6, 42);
+//function should return a string
+TEST(FizzBuzzFunction, returnsString){
+  string testString = FizzBuzz(1);
+  EXPECT_EQ(testString, "1");
 }
+
+//function should return a "2" when passed 2
+TEST(FizzBuzzFunction, returnsProperNumber){
+  string testString = FizzBuzz(2);
+  EXPECT_EQ(testString, "2");
+}
+
+//function should return a "fizz" when passed a 3
